@@ -46,9 +46,6 @@ total_detections = 0
 result_from_engine = []
 eng_name = []
 
-# This variable stores the # of engines that have rated this IP address as benign or "not malicious"
-count_benign = 0
-
 for i in data_output: # iterates through all the analysis results from all the different engines 
     total_engines = 1 + total_engines # ticks the total engines calculator up 1
     if data_output[i]["category"] == "malicious" or data_output[i]["category"] == "suspicious": # 
