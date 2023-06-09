@@ -65,4 +65,4 @@ for finding in result_from_engine:
 if total_detections > 0:
     print("The given IP address, %s, was rated as " % ipv4_add + str(result_from_engine)[1:-1] + " on " + str(total_detections) + " engines out of " + str(total_engines) + " engines. The engines which reported this are: " + str(eng_name)[1:-1] + " respectively.")
 else:
-    print("The given IP address %s " % ipv4_add + "was found to be non-malicious or suspicious from all " + str(total_engines) + "detection engines tested.")
+    print("The given IP address %s " % ipv4_add + "was found to be non-malicious or suspicious from all " + str(total_engines) + " detection engines tested.")
