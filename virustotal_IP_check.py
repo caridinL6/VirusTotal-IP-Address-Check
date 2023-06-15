@@ -49,11 +49,11 @@ eng_name = []
 for i in data_output: # iterates through all the analysis results from all the different engines 
     total_engines = 1 + total_engines # ticks the total engines calculator up 1
     if data_output[i]["category"] == "malicious" or data_output[i]["category"] == "suspicious": # 
-        result_from_engine.append(data_output[i]["result"]) # appends the result engine that is found to be malicious
+        result_from_engine.append(data_output[i]["result"]) # appends the results from engine that is found to be malicious
         eng_name.append(data_output[i]["engine_name"]) # appends the engine name of the engine that found this to be malicious or suspicious
         total_detections = 1 + total_detections
 
-# Provides categorical details of why a given malicious or suspicious IP Address was rated as such. Possible  The first variable stores a list of the malicious category and appends the finding to the list
+# Provides categorical details of why a given malicious or suspicious IP Address was rated as such. The first variable stores a list. The malicious category name, such as "phishing", "malicious", etc. is working
 malicious_category = []
 for finding in result_from_engine:
     if finding not in malicious_category:
